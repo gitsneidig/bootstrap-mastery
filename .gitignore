@@ -16,6 +16,9 @@
 *.vi
 *.zip
 *~
+*.gif
+*.png
+*.jpg
 
 # OS or Editor folders
 ._*
