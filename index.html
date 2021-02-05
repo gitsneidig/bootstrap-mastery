@@ -17,13 +17,26 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/pie.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Bethany's Pie Shop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="allpies.html">Pies</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="allpies.html">Fruit pies</a>
+                  <a class="dropdown-item" href="allpies.html">Cheese cakes</a>
+                  <a class="dropdown-item" href="seasonalpies.html">Seasonal pies</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="allpies.html">All pies</a>
+                </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="order.html">Order</a>
@@ -35,6 +48,50 @@
   </header>
 
   <main class="container" role="main">
+
+    <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#welcomeCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#welcomeCarousel" data-slide-to="1"></li>
+          <li data-target="#welcomeCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active welcome-carousel-image1">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Welcome to Bethany's Pie Shop</h1>
+                <p>Home to the best pies on the internet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item welcome-carousel-image2">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Discover our pie subscription</h1>
+                <p>Our delicious pies delivered to your door. Every week.</p>
+                <p><a class="btn btn-lg btn-primary" href="piesubscription.html" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item welcome-carousel-image3">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Browse the pies of summer.</h1>
+                <p>Every season has its pies. Enjoy our summer fruit pies now.</p>
+                <p><a class="btn btn-lg btn-primary" href="fruitpies.html" role="button">Fruit pies</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#welcomeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#welcomeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
 
     <div class="row">
