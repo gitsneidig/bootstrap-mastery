@@ -9,6 +9,10 @@ body {
     background-color: #a593c2 !important;
 }
 
+.jumbotron-other {
+    background: url('../images/carousel3.jpg') no-repeat fixed;
+}
+
 .jumbotron-detail-apple-pie {
     background: url('../images/products/applepie.jpg') no-repeat fixed;
 }
